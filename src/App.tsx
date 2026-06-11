@@ -105,7 +105,7 @@ export default function App() {
                 </svg>
               </div>
               <div>
-                <h1 className="text-sm font-bold text-white tracking-tight">AniWave</h1>
+                <h1 className="text-sm font-bold text-white tracking-tight">HanimeX</h1>
                 <p className="text-[0.55rem] text-gray-500 -mt-0.5">Anime Streaming</p>
               </div>
             </div>
