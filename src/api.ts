@@ -1,13 +1,9 @@
-// Determine if we should use proxy
-const isProduction = typeof window !== 'undefined' && 
-  !window.location.hostname.includes('localhost') && 
-  !window.location.hostname.includes('127.0.0.1');
-
-const DIRECT_URL = 'https://www.sankavollerei.com/anime';
+// Data berasal dari scraper sendiri (api/proxy.ts), bukan lagi API pihak ketiga.
+// Semua request selalu lewat /api agar logika scraping tetap di server.
 const PROXY_URL = '/api';
 
 function getBaseUrl(): string {
-  return isProduction ? PROXY_URL : DIRECT_URL;
+  return PROXY_URL;
 }
 
 export interface AnimeItem {
